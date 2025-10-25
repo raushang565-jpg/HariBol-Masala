@@ -1,0 +1,21 @@
+/* Golden gradient for headings */
+.golden-gradient {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Light glow effect for spice images */
+.spice-glow {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.spice-glow:hover {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}

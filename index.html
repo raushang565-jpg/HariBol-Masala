@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HariBol Masala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-b from-red-900 to-orange-800 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-red-900 shadow-lg fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <img src="https://via.placeholder.com/100x50?text=HariBol+Logo" alt="HariBol Masala Logo" class="h-10">
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-orange-400 transition">Home</a>
+                <a href="#about" class="hover:text-orange-400 transition">About Us</a>
+                <a href="#products" class="hover:text-orange-400 transition">Products</a>
+                <a href="#buy" class="hover:text-orange-400 transition">Buy Now</a>
+                <a href="#contact" class="hover:text-orange-400 transition">Contact</a>
+            </div>
+            <button id="lang-toggle" class="bg-orange-500 px-3 py-1 rounded text-sm hover:bg-orange-600 transition">Switch to Nepali</button>
+            <button class="md:hidden" onclick="toggleMenu()">☰</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-red-900 px-4 pb-3">
+            <a href="#home" class="block py-2 hover:text-orange-400">Home</a>
+            <a href="#about" class="block py-2 hover:text-orange-400">About Us</a>
+            <a href="#products" class="block py-2 hover:text-orange-400">Products</a>
+            <a href="#buy" class="block py-2 hover:text-orange-400">Buy Now</a>
+            <a href="#contact" class="block py-2 hover:text-orange-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+        <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-5xl font-bold golden-gradient" data-en="HariBol Masala" data-np="हरिबोल मसला">HariBol Masala</h1>
+            <p class="text-xl mt-4" data-en="Pure Taste of Tradition" data-np="परम्पराको शुद्ध स्वाद">Pure Taste of Tradition</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-4 bg-orange-100 text-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold golden-gradient mb-6" data-en="About Us" data-np="हाम्रो बारेमा">About Us</h2>
+            <p class="max-w-2xl mx-auto" data-en="HariBol Masala brings the authentic flavors of Nepal to your kitchen. We source pure, high-quality spices directly from local farmers, ensuring tradition and premium taste in every blend." data-np="हरिबोल मसला नेपालका मौलिक स्वादहरू तपाईंको भान्सामा ल्याउँछ। हामी स्थानीय किसानहरूबाट शुद्ध, उच्च गुणस्तरका मसला सिधै स्रोत गर्छौं, प्रत्येक मिश्रणमा परम्परा र प्रिमियम स्वाद सुनिश्चित गर्दै।">HariBol Masala brings the authentic flavors of Nepal to your kitchen. We source pure, high-quality spices directly from local farmers, ensuring tradition and premium taste in every blend.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 px-4 bg-red-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold golden-gradient text-center mb-10" data-en="Our Products" data-np="हाम्रा उत्पादनहरू">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition transform spice-glow">
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Garam Masala" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold" data-en="Garam Masala" data-np="गरम मसला">Garam Masala</h3>
+                    <p data-en="A warm blend of spices for authentic Nepali curries." data-np="नेपाली क्युरीहरूका लागि मसलाहरूको न्यानो मिश्रण।">A warm blend of spices for authentic Nepali curries.</p>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition transform spice-glow">
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Jeera Powder" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold" data-en="Jeera Powder" data-np="जीरा पाउडर">Jeera Powder</h3>
+                    <p data-en="Ground cumin for earthy, aromatic flavors." data-np="पृथ्वी र सुगन्धित स्वादहरूका लागि पिसेको जीरा।">Ground cumin for earthy, aromatic flavors.</p>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition transform spice-glow">
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Chilli Powder" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold" data-en="Chilli Powder" data-np="खुर्सानी पाउडर">Chilli Powder</h3>
+                    <p data-en="Spicy red chili for heat and color." data-np="तातो र रङका लागि तीखो रातो खुर्सानी।">Spicy red chili for heat and color.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Now Section -->
+    <section id="buy" class="py-16 px-4 bg-orange-100 text-gray-800 text-center">
+        <h2 class="text-3xl font-bold golden-gradient mb-6" data-en="Buy Now" data-np="अहिले किन्नुहोस्">Buy Now</h2>
+        <p class="mb-6" data-en="Order from our online partners or visit our local shop." data-np="हाम्रा अनलाइन साझेदारहरूबाट अर्डर गर्नुहोस् वा हाम्रो स्थानीय पसलमा जानुहोस्।">Order from our online partners or visit our local shop.</p>
+        <a href="https://www.daraz.com.np" class="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition mr-4" data-en="Shop on Daraz" data-np="डाराजमा किन्नुहोस्">Shop on Daraz</a>
+        <a href="#contact" class="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition" data-en="Contact Us" data-np="हामीलाई सम्पर्क गर्नुहोस्">Contact Us</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-red-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold golden-gradient mb-6" data-en="Contact Us" data-np="हामीलाई सम्पर्क गर्नुहोस्">Contact Us</h2>
+            <form class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg text-gray-800">
+                <input type="text" placeholder="Name" class="w-full p-3 mb-4 border rounded" required>
+                <input type="tel" placeholder="Phone" class="w-full p-3 mb-4 border rounded" required>
+                <textarea placeholder="Message" class="w-full p-3 mb-4 border rounded" rows="4" required></textarea>
+                <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition">Send</button>
+            </form>
+            <div class="mt-6">
+                <p data-en="Follow us:" data-np="हामीलाई फलो गर्नुहोस्:">Follow us:</p>
+                <a href="#" class="text-orange-400 mx-2">Facebook</a>
+                <a href="#" class="text-orange-400 mx-2">Instagram</a>
+                <a href="#" class="text-orange-400 mx-2">TikTok</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 px-4 text-center">
+        <p data-en="© 2023 HariBol Masala. All rights reserved." data-np="© २०२३ हरिबोल मसला। सबै अधिकार सुरक्षित।">© 2023 HariBol Masala. All rights reserved.</p>
+        <p data-en="Address: Madanpur Bazar, Kabilasi-3, Nepal | Phone: +977-9867052351" data-np="ठेगाना: मदनपुर बजार, कविलासी-३, नेपाल | फोन: +९७७-9867052351">Address: Madanpur Bazar, Kabilasi-3, Nepal | Phone: +977-123-456789</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
